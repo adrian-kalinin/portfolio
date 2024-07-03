@@ -14,6 +14,11 @@
             Main
           </NuxtLink>
         </li>
+        <li>
+          <NuxtLink to="/about" class="nav-link">
+            About
+          </NuxtLink>
+        </li>
       </ul>
     </nav>
   </header>
