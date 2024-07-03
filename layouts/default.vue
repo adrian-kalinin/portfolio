@@ -1,5 +1,6 @@
 <script setup lang="ts">
 useHead({
+  titleTemplate: '%s - Adrian Kalinin',
   link: [
     {
       rel: 'preconnect',
@@ -25,6 +26,6 @@ useHead({
 
 <style>
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 </style>

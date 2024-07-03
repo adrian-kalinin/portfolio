@@ -9,6 +9,7 @@ useSeoMeta({
 })
 
 useHead({
+  titleTemplate: 'Adrian Kalinin',
   htmlAttrs: {
     lang: 'en',
   },
