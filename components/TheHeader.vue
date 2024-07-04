@@ -19,6 +19,11 @@
             About
           </NuxtLink>
         </li>
+        <li>
+          <NuxtLink to="/projects" class="nav-link">
+            Projects
+          </NuxtLink>
+        </li>
       </ul>
     </nav>
   </header>
