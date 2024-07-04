@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 useHead({
   titleTemplate: '%s - Adrian Kalinin',
   link: [
