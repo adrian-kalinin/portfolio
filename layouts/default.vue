@@ -17,7 +17,7 @@ useHead({
 
 <template>
   <div class="mx-auto max-w-2xl">
-    <TheHeader />
+    <MenuHeader />
     <main class="mt-10 p-2">
       <slot />
     </main>
