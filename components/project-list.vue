@@ -21,7 +21,6 @@ const repositories = computed(() => data.value.filter(repo => !repo.fork).sort((
         v-for="repository in repositories"
         :key="repository.id"
         :repository="repository"
-        class="rounded-sm border border-gray-200 p-4 font-mono hover:bg-gray-100"
       />
     </ul>
   </section>
