@@ -18,7 +18,7 @@
       </NuxtLink>
     </div>
     <!-- Color mode selector -->
-    <div class="ml-auto flex items-center space-x-4">
+    <div class="mr-2 ml-auto flex items-center space-x-4">
       <ClientOnly>
         <ColorModeSelector />
       </ClientOnly>
