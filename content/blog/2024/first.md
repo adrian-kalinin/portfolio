@@ -50,4 +50,4 @@ Tables:
 console.log('Hello World!')
 ```
 
-[Go to the next article](/blog/vue-introduction)
+[Go to the next article](/blog/2024/vue-introduction)
