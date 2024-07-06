@@ -2,17 +2,15 @@
 title: 'First blog post'
 description: 'This is the first blog post on my website.'
 head:
-meta:
-- name: 'keywords'
-  content: 'nuxt, vue, content'
-- name: 'author'
-  content: 'Adrian Kalinin'
-- name: 'copyright'
-  content: '© 2022 Adrian Kalinin'
-- name: 'og:title'
-  content: 'First blog post'
-- name: 'og:description'
-  content: 'This is the first blog post on my website.'
+    meta:
+    - name: 'author'
+      content: 'Adrian Kalinin'
+    - name: 'copyright'
+      content: '© 2022 Adrian Kalinin'
+    - name: 'og:title'
+      content: 'First blog post'
+    - name: 'og:description'
+      content: 'This is the first blog post on my website.'
 ---
 
 # First blog post
@@ -47,8 +45,8 @@ Tables:
 |--|--|
 | Adrian | Kalinin |
 
-```python
-print("Hello, world!")
+```javascript
+console.log('Hello World!')
 ```
 
-[Go to the second article](/blog/second)
+[Go to the next article](/blog/vue-introduction)
