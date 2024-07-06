@@ -1,7 +1,7 @@
 <template>
   <nav class="flex items-center gap-5 border-b border-black/35 dark:border-white/35">
     <!-- Header logo -->
-    <div class="flex w-auto flex-col items-center bg-black p-5 text-xs font-black uppercase text-white h-[50px] hover:underline hover:underline-offset-4 dark:bg-white dark:text-black">
+    <div class="flex w-auto flex-col items-center border-r p-5 text-xs font-black uppercase border-black/35 h-[50px] hover:underline hover:underline-offset-4 dark:border-white/35">
       <NuxtLink to="/" class="m-auto">
         Adrian Kalinin
       </NuxtLink>
