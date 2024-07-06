@@ -25,7 +25,7 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Varela&display=swap',
       crossorigin: '',
     },
   ],
@@ -33,9 +33,9 @@ useHead({
 </script>
 
 <template>
-  <div class="mx-auto max-w-2xl">
+  <div class="">
     <MenuHeader />
-    <main class="mt-10 p-2">
+    <main class="mx-auto max-w-2xl mt-10 p-2">
       <slot />
     </main>
   </div>
@@ -43,7 +43,7 @@ useHead({
 
 <style>
 body {
-  font-family: 'Roboto', sans-serif;
-  @apply bg-white text-gray-700 dark:bg-gray-900 dark:text-gray-300;
+  font-family: "Varela", arial, sans-serif;;
+  @apply bg-white text-black dark:bg-black dark:text-white;
 }
 </style>

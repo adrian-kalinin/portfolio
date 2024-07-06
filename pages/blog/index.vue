@@ -49,10 +49,10 @@ const posts = computed(() => {
 
 <style scoped>
 .header {
-  @apply flex items-center border-b border-gray-200 py-3 text-sm text-gray-400 space-x-8 dark:border-gray-700;
+  @apply flex items-center border-b py-3 text-sm text-gray-400 border-black/35 space-x-8 dark:border-white/35;
 }
 
 .row {
-  @apply flex items-center border-b border-gray-200 py-3 space-x-8 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800;
+  @apply flex items-center border-b py-3 space-x-8 border-black/35 hover:bg-gray-100 dark:border-white/35 hover:underline hover:underline-offset-4;
 }
 </style>

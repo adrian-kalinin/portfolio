@@ -1,37 +1,27 @@
 <template>
-  <header class="mt-5 flex items-center justify-between">
-    <div class="flex items-center space-x-12">
-      <!-- Header logo -->
-      <div>
-        <NuxtLink to="/" class="text-xl font-semibold nav-link">
-          Adrian Kalinin
-        </NuxtLink>
-      </div>
-      <!-- Navigation links -->
-      <nav class="font-mono">
-        <ul class="flex space-x-4">
-          <li>
-            <NuxtLink to="/projects" class="nav-link">
-              Projects
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/blog" class="nav-link">
-              Blog
-            </NuxtLink>
-          </li>
-        </ul>
-      </nav>
+  <nav class="flex items-center gap-5 border-b border-black/35 dark:border-white/35">
+    <!-- Header logo -->
+    <div class="flex flex-col items-center bg-black text-xs font-black text-white w-[50px] h-[50px] hover:underline hover:underline-offset-4 dark:bg-white dark:text-black">
+      <NuxtLink to="/" class="m-auto">
+        AK
+      </NuxtLink>
+    </div>
+    <!-- Navigation links -->
+    <div>
+      <NuxtLink to="/projects" class="text-xs font-semibold uppercase hover:underline hover:underline-offset-4">
+        Projects
+      </NuxtLink>
+    </div>
+    <div>
+      <NuxtLink to="/blog" class="text-xs font-semibold uppercase hover:underline hover:underline-offset-4">
+        Blog
+      </NuxtLink>
     </div>
     <!-- Color mode selector -->
-    <ClientOnly>
-      <ColorModeSelector />
-    </ClientOnly>
-  </header>
+    <div class="ml-auto flex items-center space-x-4">
+      <ClientOnly>
+        <ColorModeSelector />
+      </ClientOnly>
+    </div>
+  </nav>
 </template>
-
-<style scoped lang="postcss">
-.nav-link {
-  @apply p-2 hover:bg-gray-200 dark:hover:bg-gray-800;
-}
-</style>
