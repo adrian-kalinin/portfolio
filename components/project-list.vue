@@ -7,7 +7,7 @@ const repositories = computed(() => data.value.filter(repo => !repo.fork).sort((
 
 <template>
   <p class="mb-10">
-    Take a look at my GitHub repositories!
+    Take a look at my GitHub projects!
   </p>
   <section v-if="pending">
     Loading...
