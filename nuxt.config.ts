@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/content',
+    '@nuxt/icon',
   ],
   colorMode: {
     classSuffix: '',
@@ -16,5 +17,8 @@ export default defineNuxtConfig({
         default: 'monokai',
       },
     },
+  },
+  icon: {
+    size: '28px',
   },
 })
