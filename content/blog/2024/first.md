@@ -1,6 +1,7 @@
 ---
 title: 'First blog post'
 description: 'This is the first blog post on my website.'
+publishedAt: 2024-07-05
 head:
     meta:
     - name: 'author'
