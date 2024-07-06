@@ -25,6 +25,11 @@
               Projects
             </NuxtLink>
           </li>
+          <li>
+            <NuxtLink to="/blog" class="nav-link">
+              Blog
+            </NuxtLink>
+          </li>
         </ul>
       </nav>
     </div>
@@ -40,3 +45,5 @@
   @apply p-2 hover:bg-gray-200 dark:hover:bg-gray-800;
 }
 </style>
+<script setup lang="ts">
+</script>
