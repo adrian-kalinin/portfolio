@@ -43,7 +43,7 @@ useHead({
 
 <style>
 body {
-  font-family: "Varela", arial, sans-serif;;
+  font-family: 'Varela', arial, sans-serif;
   @apply bg-white text-black dark:bg-black dark:text-white;
 }
 </style>

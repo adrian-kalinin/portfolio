@@ -53,6 +53,6 @@ const posts = computed(() => {
 }
 
 .row {
-  @apply flex items-center border-b py-3 space-x-8 border-black/35 hover:bg-gray-100 dark:border-white/35 hover:underline hover:underline-offset-4;
+  @apply flex items-center border-b py-3 space-x-8 border-black/35 hover:underline hover:underline-offset-4 dark:border-white/35;
 }
 </style>
