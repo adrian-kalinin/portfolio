@@ -1,3 +1,58 @@
+<script setup>
+const { data } = useAsyncData('post-list', () => {
+  return queryContent('/blog')
+    .only(['_path', 'title', 'publishedAt'])
+    .sort({ publishedAt: -1 })
+    .find()
+})
+
+const posts = computed(() => {
+  if (!data.value) {
+    return []
+  }
+
+  let previousYear = null
+
+  return data.value.map((post) => {
+    const currentYear = new Date(post.publishedAt).getFullYear()
+    post.year = (currentYear !== previousYear) ? currentYear : ''
+    previousYear = currentYear
+    return post
+  })
+})
+</script>
+
 <template>
-  <h2>Here is my blog!</h2>
+  <section>
+    <div class="header">
+      <div class="w-12">
+        Date
+      </div>
+      <div>
+        Title
+      </div>
+    </div>
+    <ul>
+      <li v-for="post in posts" :key="post._path">
+        <NuxtLink :to="post._path" class="row">
+          <div class="w-12 text-gray-500">
+            {{ post.year }}
+          </div>
+          <div>
+            {{ post.title }}
+          </div>
+        </NuxtLink>
+      </li>
+    </ul>
+  </section>
 </template>
+
+<style scoped>
+.header {
+  @apply flex items-center border-b border-gray-200 py-3 text-sm text-gray-400 space-x-8 dark:border-gray-700;
+}
+
+.row {
+  @apply flex items-center border-b border-gray-200 py-3 space-x-8 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800;
+}
+</style>
