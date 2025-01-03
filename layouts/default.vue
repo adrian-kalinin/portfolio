@@ -41,7 +41,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style lang="postcss">
 body {
   font-family: 'Varela', arial, sans-serif;
   @apply bg-white text-black dark:bg-black dark:text-white;

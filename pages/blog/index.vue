@@ -47,7 +47,7 @@ const posts = computed(() => {
   </section>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .header {
   @apply flex items-center border-b py-3 text-sm text-gray-400 border-black/35 space-x-8 dark:border-white/35;
 }
