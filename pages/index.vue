@@ -5,7 +5,8 @@ useHead({
 </script>
 
 <template>
-  <article class="prose dark:prose-invert prose-h1:text-3xl">
-    <ContentDoc path="/about" />
-  </article>
+  <section>
+    <h1 class="text-4xl mb-6">Hey there!</h1>
+    <p>My name is Adrian, and I'm a product-focused software engineer based in Helsinki, Finland.</p>
+  </section>
 </template>
